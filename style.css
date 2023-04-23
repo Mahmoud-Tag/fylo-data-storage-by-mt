@@ -68,8 +68,8 @@ body {
 }
 @media (width > 1024px) {
   .container .images-div {
-    width: 35%;
-    height: 170px;
+    width: 25%;
+    height: 215px;
   }
 }
 @media (width <= 500px) {
@@ -150,7 +150,7 @@ body {
 }
 @media (width > 1024px) {
   .container .usage-div {
-    width: 45%;
+    width: 40%;
     height: 170px;
   }
 }
@@ -163,13 +163,29 @@ body {
   font-size: 11px;
   color: var(--Pale-Blue);
 }
+@media (width > 1024px) {
+  .container .usage-div p {
+    font-size: 16px;
+    color: var(--Pale-Blue);
+  }
+}
 .container .usage-div .track {
   width: 100%;
-  height: 10px;
+  height: 12px;
   border-radius: 25px;
   background-color: var(--Very-Dark-Blue);
   padding-top: 1px;
   padding-left: 1px;
+}
+@media (width > 1024px) {
+  .container .usage-div .track {
+    width: 100%;
+    height: 15px;
+    border-radius: 25px;
+    background-color: var(--Very-Dark-Blue);
+    padding-top: 2px;
+    padding-left: 1px;
+  }
 }
 .container .usage-div .track .process {
   width: 80%;
@@ -177,6 +193,15 @@ body {
   border-radius: 25px;
   background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   position: relative;
+}
+@media (width > 1024px) {
+  .container .usage-div .track .process {
+    width: 80%;
+    height: 10px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: relative;
+  }
 }
 .container .usage-div .track .process .thumb {
   width: 5px;
@@ -186,6 +211,17 @@ body {
   position: absolute;
   right: 1px;
   top: 1px;
+}
+@media (width > 1024px) {
+  .container .usage-div .track .process .thumb {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 2px;
+    top: 2px;
+  }
 }
 .container .usage-div .gb-left {
   width: 110px;
@@ -199,6 +235,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (width > 1024px) {
+  .container .usage-div .gb-left {
+    width: 135px;
+    height: 65px;
+  }
+}
 @media (width <= 500px) {
   .container .usage-div .gb-left {
     width: 125px;
@@ -211,9 +253,21 @@ body {
   font-size: 10px;
   font-weight: 400;
 }
+@media (width > 1024px) {
+  .container .usage-div .gb-left span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
 .container .usage-div .gb-left b {
   font-size: 25px;
   margin-right: 3px;
+}
+@media (width > 1024px) {
+  .container .usage-div .gb-left b {
+    font-size: 35px;
+    margin-right: 4px;
+  }
 }
 .container .usage-div .gb-left::after {
   position: absolute;
@@ -244,6 +298,13 @@ body {
   font-size: 8px;
   color: var(--Pale-Blue);
   font-weight: bold;
+}
+@media (width > 1024px) {
+  .container .usage-div .nums span {
+    font-size: 12px;
+    color: var(--Pale-Blue);
+    font-weight: bold;
+  }
 }
 .attribution {
   font-size: 11px;
