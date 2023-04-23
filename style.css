@@ -22,7 +22,7 @@ body {
   background-color: var(--Very-Dark-Blue);
   background-image: url("images/bg-desktop.png");
   background-position: bottom;
-  background-size: 1024px;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 @media (width <= 500px) {
@@ -66,6 +66,12 @@ body {
   border-radius: 7px;
   border-top-right-radius: 80px;
 }
+@media (width > 1024px) {
+  .container .images-div {
+    width: 35%;
+    height: 170px;
+  }
+}
 @media (width <= 500px) {
   .container .images-div {
     width: 95%;
@@ -73,6 +79,11 @@ body {
 }
 .container .images-div .logo {
   width: 100px;
+}
+@media (width > 1024px) {
+  .container .images-div .logo {
+    width: 145px;
+  }
 }
 .container .images-div .icons {
   width: 100%;
@@ -91,16 +102,38 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
+@media (width > 1024px) {
+  .container .images-div ul li {
+    padding: 10px 11px;
+  }
+}
 .container .images-div ul li img {
   width: 18px;
   height: 13px;
 }
+@media (width > 1024px) {
+  .container .images-div ul li img {
+    width: 23px;
+    height: 18px;
+  }
+}
 .container .images-div ul li:first-child {
   padding: 6px 11px;
+}
+@media (width > 1024px) {
+  .container .images-div ul li:first-child {
+    padding: 9px 15px;
+  }
 }
 .container .images-div ul li:first-child img:first-child {
   width: 14px;
   height: 18px;
+}
+@media (width > 1024px) {
+  .container .images-div ul li:first-child img:first-child {
+    width: 16px;
+    height: 20px;
+  }
 }
 .container .usage-div {
   width: 400px;
@@ -114,6 +147,12 @@ body {
   flex-direction: column;
   justify-content: space-around;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (width > 1024px) {
+  .container .usage-div {
+    width: 45%;
+    height: 170px;
+  }
 }
 @media (width <= 500px) {
   .container .usage-div {
@@ -199,6 +238,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 }
 .container .usage-div .nums span {
   font-size: 8px;
